@@ -1,0 +1,18 @@
+body {
+    background-color:antiquewhite;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+	width: 100%;
+	display: flex;
+    background-color:aqua;
+    transition: 0.6s;
+    z-index: 999;
+}
+
+header.sticky {
+    background-color:blueviolet;
+}
