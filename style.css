@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color:rgba(19, 17, 17, 0.925);
     margin: 0px;
@@ -109,8 +113,10 @@ ul.nav li.current-page a {
 
 #home-div ul {
     display: flex;
-    width: 100%;
+    width: 200px;
     gap: 5em;
+    float: left;
+    padding-left: 0;
     align-content: center;
     justify-content: center;
     margin-left: 0;
@@ -129,7 +135,18 @@ ul.nav li.current-page a {
 @media only screen and (max-width:1024px) {
     #home-div h2 {
         font-size: 3.5vw;
+        -webkit-text-stroke: 0;
+        color: #e9b863;
     }
 }
-
 /*-- Home section ends --*/
+
+/*-- b. About section begins --*/
+
+#about {
+    width: 100%;
+    height: 100vh;
+    background: #e9b863;
+}
+
+/*-- About section ends --*/
