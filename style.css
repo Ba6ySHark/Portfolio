@@ -1,18 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-    background-color:antiquewhite;
+    background-color:rgba(19, 17, 17, 0.925);
+    margin: 0px;
+    font-size: 62.5%
 }
 
 header {
     position: fixed;
     top: 0px;
-    left: 0;
+    left: 0px;
 	width: 100%;
+    height: 9vh;
 	display: flex;
-    background-color:aqua;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
     transition: 0.6s;
     z-index: 999;
 }
 
 header.sticky {
-    background-color:blueviolet;
+    background-color: #201d1d;
+    height: 7vh;
+}
+
+#hire {
+    text-decoration: none;
+    margin: 2rem;
+    color: #e09a21;
+    font-family: "Press Start 2P";
+    font-size: 1.5em;
+}
+
+.greeting-page {
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+}
+
+ul.nav {
+    display: flex;
+    min-height: 48px;
+    gap: 3rem;
+    align-items: center;
+    margin: 2rem;
+}
+
+ul.nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+ul.nav li a {
+    text-decoration: none;
+    color:azure;
+    font-family: "consolas";
+    font-size: 2em;
+}
+
+ul.nav li.current-page a {
+    color: #e09a21;
+}
+
+#home-div {
+    position: absolute;
+    width: 60%;
+    height: 25%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+#home-div h1 {
+    color:azure;
+    font-size: 3em;
+    font-family: "Press Start 2P";
+    letter-spacing: 2px;
+}
+
+#home-div h2 {
+    color:rgba(41, 36, 36, 0.925);
+    width: 100%;
+    font-size: 3.5em;
+    font-family: consolas;
+    -webkit-text-stroke: 0.05vw #e09a21;
+    animation: typing 2.5s steps(64), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+#home-div h3 {
+    color: #e9b863;
+    font-size: 1.75em;
+    font-family: consolas;
+}
+
+#home-div ul {
+    display: flex;
+    width: 100%;
+    gap: 5em;
+    align-content: center;
+    justify-content: center;
+    margin-left: 0;
+}
+
+#home-div ul li {
+    width: 30px;
+    height: 30px;
+}
+
+#home-div ul li a:hover {
+    opacity: 0.75;
 }
