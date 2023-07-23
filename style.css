@@ -6,6 +6,7 @@ body {
     font-size: 62.5%
 }
 
+/* -- Header Section begins -- */
 header {
     position: fixed;
     top: 0px;
@@ -32,7 +33,9 @@ header.sticky {
     font-family: "Press Start 2P";
     font-size: 1.5em;
 }
+/* -- Header section ends -- */
 
+/*-- a. Home section begins --*/
 .greeting-page {
     background-color: transparent;
     width: 100%;
@@ -111,6 +114,7 @@ ul.nav li.current-page a {
     align-content: center;
     justify-content: center;
     margin-left: 0;
+    list-style: none;
 }
 
 #home-div ul li {
@@ -121,3 +125,11 @@ ul.nav li.current-page a {
 #home-div ul li a:hover {
     opacity: 0.75;
 }
+
+@media only screen and (max-width:1024px) {
+    #home-div h2 {
+        font-size: 3.5vw;
+    }
+}
+
+/*-- Home section ends --*/
