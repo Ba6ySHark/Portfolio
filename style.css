@@ -145,15 +145,8 @@ ul.nav li.current-page a {
 #about {
     display:block;
     width: 100%;
-    height: 55vh;
-    background: #fff;
+    height: 100vh;
     border: 1px solid;
-}
-
-#skills {
-    width: 100%;
-    height: 50vh;
-    background: #fff;
 }
 
 #about-header {
@@ -174,19 +167,21 @@ ul.nav li.current-page a {
 }
 
 #info {
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#info h1 {
     color: azure;
-    position: relative;
-    width: 85%;
-    height: 75%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0%;
-    background-color: rgb(41, 39, 39);
-    border-radius: 15px;
+    font-family: consolas;
+    font-size: 3em;
+}
+
+#info h2 {
+    color: #e09a21;
+    font-family: "Press Start 2P";
 }
 
 /*-- About section ends --*/
