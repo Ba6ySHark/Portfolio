@@ -146,7 +146,7 @@ ul.nav li.current-page a {
     display:block;
     width: 100%;
     height: 100vh;
-    border: 1px solid;
+    border: 1px solid red;
 }
 
 #about-header {
@@ -182,6 +182,123 @@ ul.nav li.current-page a {
 #info h2 {
     color: #e09a21;
     font-family: "Press Start 2P";
+}
+
+
+#description {
+    display: flex;
+    max-width: 600px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#img-div img {
+    width: 100%;
+    height: 90%;
+    border-radius: 50%;
+    shape-outside: round();
+}
+
+#description p {
+    color: rgb(190, 202, 202);
+    font-family: consolas;
+    font-size: 2em;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#additional-info {
+    display: flex;
+    max-width: 720px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#profile {
+    display: block;
+    text-align: left;
+    width: 50%;
+}
+
+#skills {
+    display: block;
+    text-align: left;
+    width: 50%;
+    padding-left: 20px;
+}
+
+#additional-info h1 {
+    color: #e9b863;
+    font-family: "Press Start 2P";
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+#additional-info h2 {
+    color:rgba(70, 62, 62, 0.925);
+    font-size: 2em;
+}
+
+#additional-info h3 {
+    color: rgb(190, 202, 202);
+    font-family: consolas;
+    font-size: 2em;
+}
+
+#additional-info p {
+    color: rgb(190, 202, 202);
+    font-family: consolas;
+    font-size: 2em;
+    text-align: left;
+}
+
+#profile p a {
+    color: #e09a21;
+    text-decoration: none;
+}
+
+#profile p a:hover {
+    color: #e9b863;
+}
+
+@media only screen and (max-width: 720px) {
+    #description {
+        display: block;
+        width: 90%;
+    }
+
+    #description p {
+        text-align: justify;
+        padding-left: 0px;
+    }
+
+    #img-div {
+        padding-bottom: 20px;
+    }
+
+    #img-div img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #additional-info {
+        display: block;
+    }
+
+    #profile {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 /*-- About section ends --*/
