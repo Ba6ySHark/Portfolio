@@ -286,7 +286,7 @@ ul.nav li.current-page a {
 }
 
 #skills ul li:hover {
-    scale: 1.2;
+    scale: 1.1;
     transition: 0.6s;
 }
 
@@ -388,7 +388,7 @@ ul.nav li.current-page a {
 
 #about-education {
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 #about-education img {
@@ -460,3 +460,5 @@ ul.nav li.current-page a {
         width: 100%;
     }
 }
+/*-- Education section ends --*/
+
