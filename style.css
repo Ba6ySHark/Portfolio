@@ -458,7 +458,74 @@ ul.nav li.current-page a {
 @media only screen and (max-width: 520px) {
     #about-education div {
         width: 100%;
+        padding: 10px;
     }
 }
 /*-- Education section ends --*/
 
+/*-- d. Projects section begins here --*/
+#projects-list {
+    display: block;
+    width: 1024px;
+    margin: 50px auto;
+    padding: 0;
+}
+
+#projects-list li {
+    display: inline-block;
+    width: 33%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#projects-list li:first-child {
+    border: 2px solid #e09a21;
+}
+
+#projects-list li:nth-child(2) img {
+    border: 2px solid cyan;
+}
+
+#projects-list li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    #projects-list {
+        width: 720px;
+    }
+
+    #projects-list li {
+        width: 46%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #projects-list {
+        width: 100%
+    }
+
+    #projects-list li {
+        display: block;
+        margin: 20px auto;
+        width: 75%;
+    }
+}
+/*-- Projects section ends here --*/
+
+/*-- e. Contacts section begins here --*/
+#contact-info {
+    height: 85vh;
+}
+/*-- Contacts section ends here --*/
+
+/*-- Footer begins here --*/
+#bottom {
+    height: 15vh;
+    background-color: rgba(41, 36, 36, 0.925);
+}
+/*-- Footer ends here --*/
