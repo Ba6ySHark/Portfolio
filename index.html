@@ -13,6 +13,7 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -56,7 +57,7 @@
             <!-- About me block begins here -->
             <h2>About Me</h2>
             <h1>Let me introduce myself.</h1>
-            <div id="description">
+            <div id="description" data-aos="slide-up">
                 <div id="img-div"><img src="/icons/pepe.png"></div>
                 <p>
                     I am an undergraduate Computer Science student at the University of Calgary.
@@ -67,7 +68,7 @@
         </div>
         <div id="additional-info">
             <!-- Profile block starts here -->
-            <div id="profile">
+            <div id="profile" data-aos="slide-up">
                 <h1>Profile</h1>
                 <p>
                     Currently I don't have a job, so I'm open to new software engineering or research opportunities.
@@ -84,7 +85,7 @@
                 </div>
             </div> <!-- Profile block ends here -->
             <!-- Skills block starts here -->
-            <div id="skills">
+            <div id="skills" data-aos="slide-up">
                 <h1>Skills</h1>
                 <p>
                     I am a cell-like independent teamworker,
@@ -109,7 +110,7 @@
     <!-- c. Education section begins here-->
     <section id="education">
         <div id="about-header">Education</div>
-        <div id="about-education">
+        <div id="about-education" data-aos="slide-up">
             <img src="/icons/uofc.png">
             <h1>University of Calgary</h1>
             <h4>Calgary, Canada</h3>
@@ -136,7 +137,7 @@
     <!-- d. Projects section begins here -->
     <section id="projects">
         <div id="about-header">Projects</div>
-        <div>
+        <div data-aos="slide-up">
             <ul id="projects-list">
                 <li><div>
                      <img src="/images/portfolio.jpg">
@@ -151,14 +152,36 @@
     <!-- e. Contacts section begins here -->
     <section id="contact">
         <div id="about-header">Contact Me</div>
-        <div id="contact-info">
-            Hello
+        <div id="contact-info" data-aos="slide-up">
+            <h1>I'd Love To Connect With You.</h1>
+            <h2>Let me get to know more about you.</h2>
+            <ul id="info-list">
+                <li><div id="info-piece">
+                    <img src="/icons/telegram.svg">
+                    <h1>Where to find me</h1>
+                    <p>
+                        856 Campus PI NW<br>
+                        Calgary, Canada<br>
+                        AB T2N 4V8
+                    </p>
+                </div></li>
+                <li><div id="info-piece">
+                    <img src="/icons/gmail.svg">
+                    <h1>Email me</h1>
+                    <p>stepan.susorov@ucalgary.ca<br><br><br></p>
+                </div></li>
+                <li><div id="info-piece">
+                    <img src="/icons/linkedin.svg">
+                    <h1>Let's connect</h1>
+                    <p><a href="">LinkedIn Profile<br><br><br></a></p>
+                </div></li>
+            </ul>
         </div>
     </section> <!-- Contacts section ends here -->
 
     <!-- Footer begins here -->
     <footer id="bottom">
-
+        <h1>© Designed and edited by Stepan Susorov in 2023</h1>
     </footer> <!-- Footer ends here -->
 
     <!-- JavaScript files -->
@@ -166,6 +189,10 @@
     <script src="app.js"></script>
     <script src="stickynavbar.js"></script>
     <script src="current.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
