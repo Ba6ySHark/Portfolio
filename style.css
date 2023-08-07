@@ -519,9 +519,14 @@ ul.nav li.current-page a {
 /*-- Projects section ends here --*/
 
 /*-- e. Contacts section begins here --*/
+#contact {
+    overflow: hidden;
+}
+
 #contact-info {
     /* height: 80vh; */
     text-align: center;
+    border: 1px solid red;
 }
 
 #contact-info h1 {
@@ -601,14 +606,15 @@ ul.nav li.current-page a {
 
 /*-- Footer begins here --*/
 #bottom {
+    display: flex;
     height: 13vh;
     background-color: rgba(41, 36, 36, 0.925);
-    text-align: center;
+    align-items: center;
 }
 
 #bottom h1 {
     color: rgb(121, 124, 124);
-    line-height: 13vh;
     font-size: 1.5em;
+    margin: 0 auto;
 }
 /*-- Footer ends here --*/
