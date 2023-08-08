@@ -20,9 +20,10 @@
     <!-- Header starts here -->
     <header>
         <a href="#contact" id="hire">hireMe()</a>
+        <button class="mobile-nav-toggle" id="menu-btn" aria-controls="nav-id" aria-expanded="false"><span class="sr-only">Menu</span></button>
         <!-- Navigation Bar-->
         <nav id="nav-bar">
-            <ul class="nav">
+            <ul class="nav" id="nav-id" data-visible="false">
                 <li class="current-page"><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
@@ -189,6 +190,7 @@
     <script src="app.js"></script>
     <script src="stickynavbar.js"></script>
     <script src="current.js"></script>
+    <script src="nav.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
