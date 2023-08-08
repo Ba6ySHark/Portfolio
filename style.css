@@ -51,6 +51,8 @@ header.sticky {
 }
 
 ul.nav {
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     min-height: 48px;
     gap: 3rem;
@@ -113,7 +115,7 @@ ul.nav li.current-page a {
         position: absolute;
         width: 2rem;
         aspect-ratio: 1;
-        top: 1.5rem;
+        /* top: 1.5rem; */
         right: 2rem;
         background-color: transparent;
         background-image: url("/icons/menu.png");
@@ -679,6 +681,9 @@ ul.nav li.current-page a {
 #bottom h1 {
     color: rgb(121, 124, 124);
     font-size: 1.5em;
-    margin: 30px auto;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 /*-- Footer ends here --*/
